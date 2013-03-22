@@ -39,5 +39,7 @@
 		"sinon":      "1.6.x"
 	},
 
-	"preferGlobal": true
+	"preferGlobal": true,
+
+	"private": true
 }

@@ -1408,10 +1408,10 @@ Lexer.prototype = {
 		this.char = 1;
 		this.from = 1;
 
-		char = this.scanMixedSpacesAndTabs();
-		if (char >= 0) {
-			this.trigger("warning", { code: "W099", line: this.line, character: char + 1 });
-		}
+		//char = this.scanMixedSpacesAndTabs();
+		//if (char >= 0) {
+		//	this.trigger("warning", { code: "W099", line: this.line, character: char + 1 });
+		//}
 
 		this.input = this.input.replace(/\t/g, state.tab);
 		char = this.scanUnsafeChars();
